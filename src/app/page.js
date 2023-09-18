@@ -28,9 +28,7 @@ export default function Home() {
 				</div>
 				<div className="w-1/5 bg-white rounded-lg shadow-md">3</div>
 			</div>
-			
 		</div>
-    </>
+	</>
   );
-  
 }
