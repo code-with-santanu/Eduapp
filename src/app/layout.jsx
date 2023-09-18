@@ -18,9 +18,9 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
         />
       </head>
-      <body className={inter.className}>
-        <Navbar />
-        {children}
+      <body className={`${inter.className} bg-[#fcf9e3]`}>
+        <Navbar height="h-16"/>
+        <div className="pt-16">{children}</div>
       </body>
     </html>
   );

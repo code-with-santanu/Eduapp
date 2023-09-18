@@ -1,9 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { quiz } from "./data.js";
-import Navbar from "../components/Navbar.js";
-
-const page = () => {
+import { quiz } from "./data";
+export default function Quiz(){
   const [activeQuestion, setactiveQuestion] = useState(0);
   const [selectedAns, setSelectedAns] = useState("");
   const [checked, setChecked] = useState(null);
@@ -114,5 +112,3 @@ const page = () => {
     </div>
   );
 };
-
-export default page;
