@@ -55,8 +55,8 @@ export default function Quiz(){
 
   return (
     <div className="flex flex-col px-12 py-7 space-y-2 items-center">
-      <div className="text-orange-300 shadow-sm bg-white p-3 rounded-lg w-2/3 text-center text-4xl font-extrabold">Quiz on Networking</div>
-      <div className="w-4/5 rounded-lg shadow-sm bg-white text-blue-900 font-bold">
+      <div className="text-orange-400 shadow-sm bg-white p-3 rounded-lg w-2/3 text-center text-3xl font-extrabold">Quiz on Networking</div>
+      <div className="w-4/5 rounded-lg shadow-md bg-white text-blue-900 font-bold">
 
       <div className="rounded-t-lg border-b-2 border-slate-100 bg-white text-blue-900 text-2xl font-bold px-10 py-4">
         Question: {activeQuestion + 1}
