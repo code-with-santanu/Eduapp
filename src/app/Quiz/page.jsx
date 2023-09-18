@@ -54,33 +54,34 @@ export default function Quiz(){
   };
 
   return (
-    <div className=" container bg-sky-200 h-full">
-      <h1 className="head">Quiz on Networking</h1>
-      <div className="head2">
-        <h2>
-          Question: {activeQuestion + 1}
-          <span>/{questions.length}</span>
-        </h2>
+    <div className="flex flex-col px-12 py-7 space-y-2 items-center">
+      <div className="text-orange-300 shadow-sm bg-white p-3 rounded-lg w-2/3 text-center text-4xl font-extrabold">Quiz on Networking</div>
+      <div className="w-4/5 rounded-lg shadow-sm bg-white text-blue-900 font-bold">
+
+      <div className="rounded-t-lg border-b-2 border-slate-100 bg-white text-blue-900 text-2xl font-bold px-10 py-4">
+        Question: {activeQuestion + 1}
+        <span>/{questions.length}</span>
       </div>
-      <div>
+
+      <div className="rounded-b-lg px-10 py-4 text-xl">
         {!showResult ? (
-          <div className="quizContainer">
-            <h3 className="head3">{questions[activeQuestion].question}</h3>
+          <div className="">
+            <div className="font-medium text-slate-700 py-3 border-b-2 border-slate-100">{questions[activeQuestion].question}</div>
             {answer.map((answer, idx) => (
-              <li
+              <li className="text-slate-700 font-medium py-4 px-10 border-b-2 border-slate-100 cursor-pointer active:bg-purple-200"
                 key={idx}
                 onClick={() => onAnswerSelected(answer, idx)}
-                className={
-                  selectedAnsIndex === idx ? "li-selected" : "li-hover"
-                }
+                // className={
+                //   selectedAnsIndex === idx ? "li-selected" : "li-hover"
+                // }
               >
                 <span>{answer}</span>
               </li>
             ))}
             {checked ? (
-              <button onClick={nextQuestion} className="next-btn">
+              <div onClick={nextQuestion} className="w-28 rounded-md text-center px-4 py-2 bg-purple-200 mt-2 ml-auto cursor-pointer">
                 {activeQuestion === question.length - 1 ? "Finish" : "Next"}
-              </button>
+              </div>
             ) : (
               <button
                 onClick={nextQuestion}
@@ -113,6 +114,8 @@ export default function Quiz(){
             </button>
           </div>
         )}
+      </div>
+
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,4 +97,4 @@ li {
 .retake-btn:hover,
 .next-btn:hover {
   background-color: #116fc1;
-}
+} */
