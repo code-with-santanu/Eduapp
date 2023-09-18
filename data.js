@@ -4,18 +4,22 @@ let data = {
             "course": "Backend Roadmap",
             "topics":{
                 "0":{
-                    "Introduction to Backend Development": ["What is Backend Development","Introduction to Backend Development","Back-end Developer Career Path","How Backend works"]
+                    "Introduction to Backend Development": [{"What is Backend Development":"ekhane link dibi"},{"Introduction to Backend Development":"ekhane link dibi"},{"Back-end Developer Career Path":"dibi"}]
                 },
                 "1": {
-                    "Basics of Frontend": ["HtML","CSS"]
+                    "Basics of Frontend": [{"HTML":"link dibi"},{"CSS":"link dibi"}]
                 },
-                "2": "Javascript",
-                "3": "Version Control",
-                "4": "Relational Databases",
-                "5": "NoSQL Databases",
-                "6": "APIs",
-                "7": "Web Servers",
-                "8": "Build Projects"
+                "2": {
+                    "Javascript":[{"":""},{"":""}]
+                },
+                "3": {
+                    "Version Control":[]
+                },
+                "4": {"Relational Databases":[]},
+                "5": {"NoSQL Databases":[]},
+                "6": {"APIs":[]},
+                "7": {"Web Servers":[]},
+                "8": {"Build Projects":[]},
             }
         },
         {
