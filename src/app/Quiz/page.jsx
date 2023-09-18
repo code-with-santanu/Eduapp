@@ -56,9 +56,9 @@ const page = () => {
   };
 
   return (
-    <div className=" container bg-sky-300">
-      <h1>Quiz on Networking</h1>
-      <div>
+    <div className=" container bg-sky-200 h-full">
+      <h1 className="head">Quiz on Networking</h1>
+      <div className="head2">
         <h2>
           Question: {activeQuestion + 1}
           <span>/{questions.length}</span>
@@ -67,7 +67,7 @@ const page = () => {
       <div>
         {!showResult ? (
           <div className="quizContainer">
-            <h3>{questions[activeQuestion].question}</h3>
+            <h3 className="head3">{questions[activeQuestion].question}</h3>
             {answer.map((answer, idx) => (
               <li
                 key={idx}
@@ -80,7 +80,7 @@ const page = () => {
               </li>
             ))}
             {checked ? (
-              <button onClick={nextQuestion} className="btn">
+              <button onClick={nextQuestion} className="next-btn">
                 {activeQuestion === question.length - 1 ? "Finish" : "Next"}
               </button>
             ) : (
@@ -92,7 +92,7 @@ const page = () => {
             )}
           </div>
         ) : (
-          <div className="quizContainer">
+          <div className="quizContainer2">
             <h3>Results</h3>
             <h3>You Scored {(result.score / 50) * 100}%</h3>
             <p>
@@ -107,7 +107,12 @@ const page = () => {
             <p>
               Wrong Answer: <span>{result.wrongAns}</span>
             </p>
-            <button onClick={() => window.location.reload()}>Retake</button>
+            <button
+              className="retake-btn"
+              onClick={() => window.location.reload()}
+            >
+              Retake
+            </button>
           </div>
         )}
       </div>
