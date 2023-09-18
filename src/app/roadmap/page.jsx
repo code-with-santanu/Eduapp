@@ -1,14 +1,13 @@
 "use client";
-import data from "../../data";
-import Navbar from "./components/Navbar";
+import data from "../../../data";
 import { useState } from "react";
 
-export default function Home() {
+export default function Roadmap() {
 	const [show, setShow] = useState("Backend Development");
-  	return (
+  return (
     <>
-		<div className="bg-[#fcf9e3] min-h-screen">
-			<Navbar/>
+    <div className="">
+			{/* <Navbar/> */}
 			<div className="flex px-12 py-7 space-x-7 w-full">
 				<div className="w-1/5 bg-white rounded-lg shadow-md">
 					<div className="p-4 text-lg text-orange-300 border-b-2 border-slate-100 font-medium rounded-t-lg">Courses</div>
@@ -29,6 +28,6 @@ export default function Home() {
 				<div className="w-1/5 bg-white rounded-lg shadow-md">3</div>
 			</div>
 		</div>
-	</>
-  );
+    </>
+  )
 }
