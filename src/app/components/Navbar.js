@@ -7,7 +7,7 @@ function Navbar({ height }) {
       className={`fixed top-0 w-full ${height} bg-white flex border-b-2 border-slate-100 items-center p-3`}
     >
       <div className="font-extrabold text-lg text-blue-900">EDUAPP</div>
-      <div className="flex ml-auto text-orange-400 font-medium space-x-4 pr-4 ">
+      <div className="flex ml-auto text-orange-500 font-medium space-x-4 pr-4 ">
         <div className="py-1 px-2 hover:bg-orange-50 text-sm rounded-md">
           <Link href="/">HOME</Link>
         </div>

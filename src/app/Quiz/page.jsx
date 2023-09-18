@@ -93,7 +93,7 @@ export default function Quiz(){
         ) : (
           <div className="quizContainer2">
             <h3>Results</h3>
-            <h3>You Scored {(result.score / 50) * 100}%</h3>
+            <h3>You Scored:{(result.score / 50) * 100}%</h3>
             <p>
               Total Questions: <span>{questions.length}</span>
             </p>
