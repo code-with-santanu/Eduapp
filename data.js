@@ -533,19 +533,19 @@ let data = {
             },
           ],
         },
-        {
-          name: "GoLang",
-          subtopics: [
-            {
-              name: "Go tutorial - Tutorials point",
-              link: "https://www.tutorialspoint.com/go/index.htm",
-            },
-            {
-              name: "Complete Golang tutorial - Hitesh Choudhary(Youtube)",
-              link: "https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa",
-            },
-          ],
-        },
+        // {
+        //   name: "GoLang",
+        //   subtopics: [
+        //     {
+        //       name: "Go tutorial - Tutorials point",
+        //       link: "https://www.tutorialspoint.com/go/index.htm",
+        //     },
+        //     {
+        //       name: "Complete Golang tutorial - Hitesh Choudhary(Youtube)",
+        //       link: "https://www.youtube.com/playlist?list=PLRAV69dS1uWQGDQoBYMZWKjzuhCaOnBpa",
+        //     },
+        //   ],
+        // },
         {
           name: "Linux, Terminal Basics",
           subtopics: [
