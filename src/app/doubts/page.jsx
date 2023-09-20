@@ -21,7 +21,7 @@ export default function doubt() {
     arr.splice(0);
     const OpenAI = require("openai").OpenAI;
     const openai = new OpenAI({
-      apiKey: "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",
+      apiKey: "",
       dangerouslyAllowBrowser: true,
     });
     async function main() {
