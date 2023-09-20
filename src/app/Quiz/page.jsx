@@ -170,13 +170,13 @@ export default function Quiz() {
                   Wrong Answer:{" "}
                   <span className="ml-auto space-x-6">{result.wrongAns}</span>
                 </div>
-                <div
-                  className="flex flex-col items-center"
-                  onClick={() => {
-                    window.location.reload();
-                  }}
-                >
-                  <div className=" text-center text-blue-900 font-bold bg-slate-200 w-36 py-2 rounded border border-blue-300 hover:bg-slate-300 mt-4">
+                <div className="flex flex-col items-center">
+                  <div
+                    className=" text-center text-blue-900 font-bold bg-slate-200 w-36 py-2 rounded border border-blue-300 hover:bg-slate-300 mt-4"
+                    onClick={() => {
+                      window.location.reload();
+                    }}
+                  >
                     Finish
                   </div>
                 </div>
