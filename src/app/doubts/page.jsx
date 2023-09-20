@@ -3,42 +3,75 @@
 import React, { useState } from "react";
 
 export default function doubt() {
+  const a = [
+    {
+      q: "Hello, Here is your personal assistant",
+      a: "How can I help you?",
+    },
+  ];
+
   const [query, setQuery] = useState("");
+  const [question, setQuestion] = useState("");
   const [ans, setAns] = useState("");
+  const [arr, setArr] = useState(a);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
     //Collect the response of the query
-
-    const axios = require("axios");
-
-    const apiKey = "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";
-    const client = axios.create({
-      headers: { Authorization: "Bearer " + apiKey },
+    arr.splice(0);
+    const OpenAI = require("openai").OpenAI;
+    const openai = new OpenAI({
+      apiKey: "",
+      dangerouslyAllowBrowser: true,
     });
-
-    const params = {
-      prompt: query,
-      max_tokens: 200,
-    };
-
-    client
-      .post("https://api.openai.com/v1/engines/davinci/completions", params)
-      .then((result) => {
-        var data = result.data.choices[0].text;
-        console.log(params.prompt + "\n" + result.data.choices[0].text);
-        setAns(data);
-      })
-      .catch((err) => {
-        console.log(err);
+    async function main() {
+      const response = await openai.chat.completions.create({
+        model: "gpt-3.5-turbo",
+        messages: [
+          {
+            role: "user",
+            content: query,
+          },
+        ],
       });
+      let data = response.choices[0].message.content;
+      console.log(data);
+
+      setAns(data);
+    }
+    main();
+  };
+
+  const addResponse = async (query, ans) => {
+    await handleSubmit(event);
+    var newData = [
+      {
+        q: query,
+        a: ans,
+      },
+    ];
+
+    setArr([newData, ...arr]);
+    console.log("addResponse done");
+    console.log(arr);
   };
 
   return (
     <div className="container">
       <div>
+        <p>{question}</p>
+        <br />
         <p>{ans}</p>
+
+        {arr.map((data, idx) => {
+          return (
+            <li className="list-none" key={idx}>
+              <p>{data.q}</p>
+              <br />
+              <p>{data.a}</p>
+            </li>
+          );
+        })}
       </div>
       <div className="doubts">
         <input
@@ -46,7 +79,15 @@ export default function doubt() {
           value={query}
           onChange={({ target }) => setQuery(target?.value)}
         />
-        <button type="submit" onClick={handleSubmit}>
+        <button
+          type="submit"
+          onClick={() => {
+            arr.splice(0);
+            addResponse(query, ans);
+            setQuestion(query);
+            setQuery("");
+          }}
+        >
           Enter
         </button>
       </div>
