@@ -172,7 +172,7 @@ export default function Quiz() {
                 </div>
                 <div className="flex flex-col items-center">
                   <div
-                    className=" text-center text-blue-900 font-bold bg-slate-200 w-36 py-2 rounded border border-blue-300 hover:bg-slate-300 mt-4"
+                    className=" text-center text-blue-900 font-bold bg-slate-200 w-36 py-2 rounded border border-blue-300 hover:bg-slate-300 mt-4 cursor-pointer"
                     onClick={() => {
                       window.location.reload();
                     }}
