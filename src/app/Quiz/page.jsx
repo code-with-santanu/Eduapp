@@ -75,7 +75,6 @@ export default function Quiz() {
         <div className="searchbar-container">
           {/* <searchBar /> */}
           <div className="input-field">
-            <FaSearch id="search-icon" />
             <input
               type="text"
               placeholder="Search here anything..."
@@ -86,7 +85,7 @@ export default function Quiz() {
               onClick={clearBar}
               className=" text-center text-blue-900 font-bold bg-slate-200 w-15 py-0 rounded border border-blue-300 hover:bg-slate-300 mt-4"
             >
-              Enter
+              <FaSearch id="search-icon" />
             </button>
           </div>
           <div className="main-text">
