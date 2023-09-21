@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "EduApp",
+  title: "GeekTopia",
   description: "Personalised educational website",
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className={`${inter.className} bg-[#fcf9e3]`}>
-        <Navbar height="h-16"/>
+        <Navbar height="h-16" />
         <div className="pt-16">{children}</div>
       </body>
     </html>
