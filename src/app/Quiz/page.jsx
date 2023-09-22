@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Quiz() {
   //for searchbar
   const [input, setInput] = useState("");
-  const [showbar, setShowbar] = useState(false);
+  const [showbar, setShowbar] = useState(true);
   const [showcontent, setShowcontent] = useState(true);
   console.log(input);
 
@@ -109,8 +109,8 @@ export default function Quiz() {
             </div>
           </div>
         )}
-      </div>
-
+      </div>{" "}
+      */}
       <div className="flex flex-col px-12 py-7 space-y-2 items-center">
         {showcontent && (
           <div className="text-orange-400 shadow-sm bg-white p-3 rounded-lg w-1/2 text-center text-3xl font-extrabold">
