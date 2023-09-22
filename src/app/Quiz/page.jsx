@@ -10,7 +10,7 @@ export default function Quiz() {
   //for searchbar
   const [input, setInput] = useState("");
   const [showbar, setShowbar] = useState(true);
-  const [showcontent, setShowcontent] = useState(false);
+  const [showcontent, setShowcontent] = useState(true);
   console.log(input);
 
   const clearBar = (event) => {
@@ -99,7 +99,6 @@ export default function Quiz() {
           </div>
         )}
       </div> */}
-        
 
       <div className="flex flex-col px-12 py-7 space-y-2 items-center">
         {showcontent && (
@@ -161,7 +160,9 @@ export default function Quiz() {
                   </div>
                   <div className="flex px-16 font-bold text-orange-400 py-3 border-b-2 border-slate-200 bg-white">
                     Total Questions:{" "}
-                    <span className="ml-auto space-x-6">{questions.length}</span>
+                    <span className="ml-auto space-x-6">
+                      {questions.length}
+                    </span>
                   </div>
                   <div className="flex px-16 font-bold text-blue-500 py-3 border-b-2 border-slate-200 bg-white">
                     Total Score:{" "}
@@ -169,7 +170,9 @@ export default function Quiz() {
                   </div>
                   <div className="flex px-16 font-bold text-green-500 py-3 border-b-2 border-slate-200 bg-white">
                     Correct Answer:{" "}
-                    <span className="ml-auto space-x-6">{result.correctAns}</span>
+                    <span className="ml-auto space-x-6">
+                      {result.correctAns}
+                    </span>
                   </div>
                   <div className="flex px-16 font-bold text-red-400 py-3 border-b-2 border-slate-200 bg-white">
                     Wrong Answer:{" "}
@@ -191,7 +194,6 @@ export default function Quiz() {
           </div>
         )}
       </div>
-      
     </>
   );
 }
