@@ -73,7 +73,7 @@ export default function Quiz() {
 
   return (
     <>
-      <div className="flex p-32 justify-center items-center">
+      {/* <div className="flex p-32 justify-center items-center">
         {showbar && (
           <div className="flex flex-col items-center w-4/5">
             <div className="flex flex-col items-center">
@@ -109,8 +109,8 @@ export default function Quiz() {
             </div>
           </div>
         )}
-      </div>{" "}
-      */}
+      </div>  */}
+
       <div className="flex flex-col px-12 py-7 space-y-2 items-center">
         {showcontent && (
           <div className="text-orange-400 shadow-sm bg-white p-3 rounded-lg w-1/2 text-center text-3xl font-extrabold">
