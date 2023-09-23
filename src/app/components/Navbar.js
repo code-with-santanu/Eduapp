@@ -21,7 +21,7 @@ function Navbar({ height }) {
           <Link href="/quiz">QUIZ</Link>
         </div>
         <div className="py-1 px-2 hover:bg-orange-50 text-sm rounded-md">
-          <Link href="/sign">SIGN IN</Link>
+          <Link href="/signup">SIGN IN</Link>
         </div>
       </div>
       <div className="material-symbols-outlined bg-purple-200 text-purple-400 rounded-full p-1 hover:text-white hover:bg-purple-400">
