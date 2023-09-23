@@ -65,10 +65,9 @@ export default function doubt() {
           <div className="text-8xl text-center py-10 font-extrabold text-orange-500 drop-shadow-md">GEEKTOPIA</div>
           <div className="font-semibold text-blue-900 text-2xl text-center ">How can I help you?</div>
       </div>}
-
       {show && <div className="w-full">
         <div className="text-2xl font-semibold bg-white px-6 py-3 rounded-lg text-blue-800 shadow mb-5">Q. {question}</div>
-        <div className="flex text-lg px-6 pt-6 pb-12 font-medium bg-white text-slate-700 rounded-lg shadow-md"><div><span className="text-orange-500 bg-orange-100 py-1 px-2 rounded-md">Ans:&nbsp;</span></div><div className="pr-5 pl-3 text-justify">{ans}</div></div>
+        <div className="flex text-lg px-6 pt-6 pb-12 font-medium bg-white text-slate-700 rounded-lg shadow-md"><div><span className="text-orange-500 bg-orange-100 py-1 px-2 rounded-md">Ans:&nbsp;</span></div><div className="pr-5 pl-3 text-justify">{(ans=== "")? <div className="h-5 w-5 rounded-full border-t-4 border-r-4 border-orange-500 animate-spin"><div className="bg-white w-2"></div></div>: ans}</div></div>
         {/* <div className="">
           {arr.map((data, idx) => {
             return (
@@ -80,7 +79,7 @@ export default function doubt() {
             );
           })}
         </div> */}
-       
+        
         
       </div>}
       <div className="w-full flex justify-center mt-4">
