@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import homeimage from "../app/Images/image51.png";
-import Footer from './components/Footer';
+import Footer from './components/Chatbot';
 
 export default function Home() {
   	return (

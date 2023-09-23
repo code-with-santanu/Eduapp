@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Chatbot from "./components/Chatbot";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${inter.className} bg-[#fcf292]`}>
         <Navbar height="h-16" />
+        <Chatbot/>
         <div className="pt-16">{children}</div>
       </body>
     </html>

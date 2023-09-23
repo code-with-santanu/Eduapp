@@ -12,7 +12,7 @@ export default function Roadmap() {
     <div className="">
 			{/* <Navbar/> */}
 			<div className="flex px-12 py-7 space-x-7 w-full">
-				<div className="w-1/5 bg-white rounded-lg shadow-md">
+				<div className="w-1/4 bg-white rounded-lg shadow-md h-fit">
 					<div className="py-4 px-6 text-lg text-orange-500 border-b-2 border-slate-00 font-bold rounded-t-lg">Courses</div>
 					{
 						data.roadmap.map((val,index,arr)=>{
@@ -20,11 +20,11 @@ export default function Roadmap() {
 							if (index!=arr.length-1)
 								return (<div key = {index} className={`${cn} border-b-2 border-slate-100`} onClick={()=>{setShow(val.course)}}>{val.course}</div>);
 							else
-								return (<div key = {index} className={cn} onClick={()=>{setShow(val.course)}}>{val.course}</div>)
+							 	return (<div key = {index} className={cn} onClick={()=>{setShow(val.course)}}>{val.course}</div>)
 						})
 					}
 				</div>
-				<div className="w-3/5 bg-white rounded-lg shadow-md pb-3"> 
+				<div className="w-3/4 bg-white rounded-lg shadow-md pb-3"> 
 					<div className="p-3 text-3xl text-center text-orange-500 border-b-2 border-slate-200 font-bold rounded-t-lg">RoadMap</div>
 					<div className="py-4 px-10 text-2xl font-bold text-blue-900">{show}</div>
 					<div>
@@ -51,7 +51,7 @@ export default function Roadmap() {
 					}
 					</div>
 				</div>
-				<div className="w-1/5 bg-white rounded-lg shadow-md">3</div>
+				{/* <div className="w-1/5 bg-white rounded-lg shadow-md"></div> */}
 			</div>
 		</div>
     </>
