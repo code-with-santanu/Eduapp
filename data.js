@@ -673,6 +673,377 @@ let data = {
         },
       ],
     },
+    {
+      course: "Frontend Development",
+      topics: [
+        {
+          name: "Introduction",
+          subtopics: [
+            {
+              name: "What is frontend  web development?",
+              link: "https://www.youtube.com/watch?v=qyHyFsT7Hig",
+            },
+          ],
+        },
+        {
+          name: "How does Internet work?",
+          subtopics: [
+            {
+              name: "Basics of Internet",
+              link: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work",
+            },
+            {
+              name: "What is DNS?",
+              link: "https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/",
+            },
+            {
+              name: "How the Internet Travel Across Oceans? ",
+              link: "https://www.youtube.com/watch?v=yd1JhZzoS6A",
+            },
+            {
+              name: "Internet-CS50's understanding technology",
+              link: "https://www.youtube.com/watch?v=n_KghQP86Sw",
+            },
+            {
+              name: "Computer Networking course ",
+              link: "https://www.youtube.com/watch?v=IPvYjXCsTg8",
+            },
+            
+          ],
+        },
+        {
+          name: "HTML Tutorial",
+          subtopics: [
+            { name: "Learn HTML", link: "https://www.youtube.com/watch?v=kUMe1FH4CHE" },
+            { name: "Basics of SEO", link: "https://github.com/seo/guide" },
+          ],
+        },
+        {
+          name: "Learning CSS",
+          subtopics: [
+            {
+              name: "Introduction to CSS - Web Dev Simplified",
+              link: "https://www.youtube.com/playlist?list=PLZlA0Gpn_vH9D0J0Mtp6lIiD_8046k3si",
+            },
+            {
+              name: "A complete guide to Flexbox",
+              link: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+            },
+            {
+              name: "A complete guide to CSS Grid",
+              link: "https://css-tricks.com/snippets/css/complete-guide-grid/",
+            },
+            {
+              name: "CSS Diner",
+              link: "https://flukeout.github.io/",
+            },
+            
+          ],
+        },
+        {
+          name: "Learning Javascript",
+          subtopics: [
+            { name: "Learn JavaScript ", link: "https://www.youtube.com/watch?v=PkZNo7MFNFg" },
+            { name: "Learn DOM manipulation ", link: "https://www.youtube.com/watch?v=5fb2aPlgoys" },
+            { name: "Learn By reading blogs ", link: "https://nikk.hashnode.dev/series/javascript-series" },
+          ],
+        },
+        {
+          name: "React JS",
+          subtopics: [
+            {
+              name: "React Tutorial-Freecodecamp",
+              link: "https://www.youtube.com/watch?v=bMknfKXIFA8",
+            },
+            {
+              name: "React Router Tutorial",
+              link: "https://www.youtube.com/playlist?list=PLC3y8-rFHvwjkxt8TOteFdT_YmzwpBlrG",
+            },
+            { name: "React Redux Tutorials", link: "https://www.youtube.com/playlist?list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK" },
+          ],
+        },
+        {
+          name:"Vue JS",
+          subtopics: [
+            {
+              name: "Tutorial",
+              link: "https://www.youtube.com/watch?v=FXpIoQ_rT_c",
+            },
+            { name: "Docs", link: "https://vuejs.org/tutorial/#step-1" },
+          ],
+        },
+        {
+          name: "Angular",
+          subtopics: [
+            { name: "Angular Tutorial ", link: "https://www.youtube.com/watch?v=k5E2AVpwsko" },
+            {
+              name: "Docs",
+              link: "https://vuejs.org/tutorial/#step-1",
+            },
+            
+          ],
+        },
+        
+        {
+          name: "Projects",
+          subtopics: [
+            {
+              name: "frontendmentor.io",
+              link: "https://www.frontendmentor.io/",
+            },
+            {
+              name: "frontendpractice.com",
+              link: "https://www.frontendpractice.com/",
+            },
+            
+          ],
+        },
+      ],
+    },
+    {
+      course: "Full Stack Development",
+      topics: [
+        {
+          name: "Getting started with frontend",
+          subtopics: [
+            {
+              name: "Frontend roadmap",
+              link: "amader website r frontend link",
+            },
+          ],
+        },
+        {
+          name: "Getting started with backend",
+          subtopics: [
+            {
+              name: "Backend roadmap",
+              link: "amader website r backend r link",
+            },
+            
+            
+          ],
+        },
+        {
+          name: "HTML Tutorial",
+          subtopics: [
+            { name: "Learn HTML", link: "https://www.youtube.com/watch?v=kUMe1FH4CHE" },
+            { name: "Basics of SEO", link: "https://github.com/seo/guide" },
+          ],
+        },
+        {
+          name: "Learning Typescript",
+          subtopics: [
+            {
+              name: "Learn Typescript ",
+              link: "https://www.codecademy.com/learn/learn-typescript",
+            },
+            {
+              name: "Typescript Tutorial ",
+              link: "https://www.tutorialspoint.com/typescript/index.htm",
+            },
+            {
+              name: "Docs",
+              link: "https://www.typescriptlang.org/docs/",
+            },
+           
+            
+          ],
+        },
+        {
+          name: "Learning GraphQL",
+          subtopics: [
+            { name: "GraphQL tutorial playlist ", link: "https://www.youtube.com/playlist?list=PL4cUxeGkcC9iK6Qhn-QLcXCXPQUov1U7f" },
+           
+          ],
+        },
+        {
+          name: "Learning NGiNX",
+          subtopics: [
+            {
+              name: "Use cases of NGiNX",
+              link: "https://www.youtube.com/watch?v=WHv_t_yK-QM",
+            },
+            {
+              name: " Tutorial",
+              link: "https://www.javatpoint.com/nginx-tutorial",
+            },
+            
+          ],
+        },
+        {
+          name:"Learning Redis",
+          subtopics: [
+            {
+              name: "Redis tutorial",
+              link: "https://www.tutorialspoint.com/redis/index.htm#:~:text=Redis%20is%20an%20open%20source,Redis%20is%20written%20in%20C.",
+            },
+            { name: "Docs", link: "https://redis.io/docs/about/" },
+          ],
+        },
+        {
+          name: "CDN",
+          subtopics: [
+            { name: "CDN Tutorial ", link: "https://www.youtube.com/watch?v=8zX0rue2Hic" },
+            
+            
+          ],
+        },
+        
+        {
+          name: "Projects",
+          subtopics: [
+            {
+              name: "Build and deploy a modern social media app",
+              link: "https://www.youtube.com/watch?v=1RHDhtbqo94",
+            },
+            {
+              name: "Build and deploy a modern netflix clone",
+              link: "https://www.youtube.com/playlist?list=PLj-4DlPRT48k8TZ2ZjzbjnAq_wgIwsIab",
+            },
+            
+          ],
+        },
+      ],
+    },
+    {
+      course: "Data-Science",
+      topics: [
+        {
+          name: "What Is Data Science",
+          subtopics: [
+            {
+              name: "what is data science?",
+              link: "https://www.ibm.com/topics/data-science",
+            },
+          ],
+        },
+        {
+          name: "Programming Languages",
+          subtopics: [
+            {
+              name: "R",
+              link: "https://www.youtube.com/watch?v=_V8eKsto3Ug&feature=youtu.be",
+            },
+            {
+              name: "Python",
+              link: "https://www.youtube.com/watch?v=t8pPdKYpowI&feature=youtu.be",
+            },
+            {
+              name: "SQL",
+              link: "https://www.youtube.com/watch?v=HXV3zeQKqGY",
+            },
+          ],
+        },
+        {
+          name: "Frameworks",
+          subtopics: [
+            {
+              name: "Pandas",
+              link: "https://www.youtube.com/playlist?list=PL-osiE80TeTsWmV9i9c58mdDCSskIFdDS",
+            },
+            {
+              name: "Numpy",
+              link: "https://www.youtube.com/watch?v=QUT1VHiLmmI",
+            },
+            {
+              name: "Scipy",
+              link: "https://www.youtube.com/watch?v=jmX4FOUEfgU",
+            },
+          ],
+        },
+        {
+          name: "Mathematics for data science",
+          subtopics: [
+            {
+              name: "Mathematics for data science",
+              link: "https://www.youtube.com/playlist?list=PLeo1K3hjS3uuKaU2nBDwr6zrSOTzNCs0l",
+            },
+            {
+              name: "Maths for data science -GFG(GeeksForGeeks)",
+              link: "https://www.geeksforgeeks.org/maths-for-data-science/",
+            },
+          ],
+        },
+        {
+          name: "Probability:",
+          subtopics: [
+            {
+              name: "Probability and stastics for data science -Khan Academy",
+              link: "https://www.khanacademy.org/math/statistics-probability/probability-library",
+            },
+          ],
+        },
+        {
+          name: "Statistics",
+          subtopics: [
+            {
+              name: "Statistics fundamentals -Youtube(StatQuest with Josh Starmer)",
+              link: "https://www.youtube.com/playlist?list=PLblh5JKOoLUK0FLuzwntyYI10UQFUhsY9",
+            },
+            {
+              name: "Statistics for data science -Youtube(Great Learning)",
+              link: "https://www.youtube.com/watch?v=Vfo5le26IhY",
+            },
+          ],
+        },
+        {
+          name: "Data Manipulation",
+          subtopics: [
+            {
+              name: "Data cleaning",
+              link: "https://www.youtube.com/watch?v=bDhvCp3_lYw",
+            },
+            {
+              name: "Data Visualization",
+              link: "https://www.youtube.com/watch?v=UO98lJQ3QGI&list=PL-osiE80TeTvipOqomVEeZ1HRrcEvtZB_",
+            },
+            {
+              name: "EDA",
+              link: "https://www.youtube.com/watch?v=fHFOANOHwh8",
+            },
+          ],
+        },
+        {
+          name: "Machine Learning",
+          subtopics: [
+            {
+              name: "Machine learning playlist",
+              link: "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU",
+            },
+            {
+              name: "ML Documentation",
+              link: "https://www.geeksforgeeks.org/machine-learning/",
+            },
+          ],
+        },
+        {
+          name: "Model Deployment",
+          subtopics: [
+            {
+              name: "Flask tutorial -GFG(geeksforgeeks)",
+              link: "https://www.geeksforgeeks.org/flask-creating-first-simple-application/",
+            },
+            {
+              name: "Deploy Models with TensorFlow Serving and Flask -Coursera(Amit Yadav)",
+              link: "https://www.coursera.org/projects/deploy-models-tensorflow-serving-flask",
+            },
+          ],
+        },
+        {
+          name: "Project Ideas",
+          subtopics: [
+            {
+              name: "Machine Learning Project",
+              link: "https://www.youtube.com/watch?v=fiz1ORTBGpY&list=PLfFghEzKVmjvuSA67LszN1dZ-Dd_pkus6",
+            },
+            {
+              name: "End To End ML Project With Dockers,Github Actions And Deployment",
+              link: "https://www.youtube.com/watch?v=MJ1vWb1rGwM",
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
 export default data;
