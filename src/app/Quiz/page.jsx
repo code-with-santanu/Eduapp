@@ -10,7 +10,7 @@ export default function Quiz() {
   //for searchbar
   const [input, setInput] = useState("");
   const [showbar, setShowbar] = useState(true);
-  const [showcontent, setShowcontent] = useState(false);
+  const [showcontent, setShowcontent] = useState(true);
   console.log(input);
 
   const clearBar = (event) => {
@@ -77,29 +77,39 @@ export default function Quiz() {
         {showbar && (
           <div className="flex flex-col items-center w-4/5">
             <div className="flex flex-col items-center">
-              <p className="text-orange-500 bg-white py-2 w-2/3 text-center rounded-lg mb-10 text-3xl font-bold shadow">Give a Quick Test</p>
+              <p className="text-orange-500 bg-white py-2 w-2/3 text-center rounded-lg mb-10 text-3xl font-bold shadow">
+                Give a Quick Test
+              </p>
               <div className="flex items-center bg-white w-3/5 p-3 mb-8 rounded-lg shadow-md">
-                <Image className="w-40 h-40 bg-orange-100 rounded-xl p-3"
+                <Image
+                  className="w-40 h-40 bg-orange-100 rounded-xl p-3"
                   src={searchPic}
                   alt="Picture of search"
                 />
-                <p className="pl-6 text-lg font-semibold">Just type the name of the topic in the search bar and we shall present you a carefully curated quiz.</p>
+                <p className="pl-6 text-lg font-semibold">
+                  Just type the name of the topic in the search bar and we shall
+                  present you a carefully curated quiz.
+                </p>
               </div>
             </div>
             <div className="rounded-full flex items-center bg-white py-2 px-3 w-3/5">
-              <input className="w-full"
+              <input
+                className="w-full"
                 type="text"
                 placeholder="Search here anything..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
               />
-              <div onClick={clearBar} className="bg-yellow-400 material-symbols-outlined">search</div>
+              <div
+                onClick={clearBar}
+                className="bg-yellow-400 material-symbols-outlined"
+              >
+                search
+              </div>
             </div>
-           
           </div>
         )}
-      </div> */}
-        
+      </div>  */}
 
       <div className="flex flex-col px-12 py-7 space-y-2 items-center">
         {showcontent && (
@@ -161,7 +171,9 @@ export default function Quiz() {
                   </div>
                   <div className="flex px-16 font-bold text-orange-400 py-3 border-b-2 border-slate-200 bg-white">
                     Total Questions:{" "}
-                    <span className="ml-auto space-x-6">{questions.length}</span>
+                    <span className="ml-auto space-x-6">
+                      {questions.length}
+                    </span>
                   </div>
                   <div className="flex px-16 font-bold text-blue-500 py-3 border-b-2 border-slate-200 bg-white">
                     Total Score:{" "}
@@ -169,7 +181,9 @@ export default function Quiz() {
                   </div>
                   <div className="flex px-16 font-bold text-green-500 py-3 border-b-2 border-slate-200 bg-white">
                     Correct Answer:{" "}
-                    <span className="ml-auto space-x-6">{result.correctAns}</span>
+                    <span className="ml-auto space-x-6">
+                      {result.correctAns}
+                    </span>
                   </div>
                   <div className="flex px-16 font-bold text-red-400 py-3 border-b-2 border-slate-200 bg-white">
                     Wrong Answer:{" "}
@@ -191,7 +205,6 @@ export default function Quiz() {
           </div>
         )}
       </div>
-      
     </>
   );
 }
