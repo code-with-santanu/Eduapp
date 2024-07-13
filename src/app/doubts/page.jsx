@@ -1,8 +1,7 @@
 "use client";
-"use strict";
 import React, { useState } from "react";
-
-export default function doubt() {
+import toast, { Toaster } from 'react-hot-toast';
+export default function Doubts() {
   // const a = [
   //   {
   //     q: "Hello, Here is your personal assistant",
@@ -26,19 +25,23 @@ export default function doubt() {
       dangerouslyAllowBrowser: true,
     });
     async function main() {
-      const response = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",
-        messages: [
-          {
-            role: "user",
-            content: query,
-          },
-        ],
-      });
-      let data = response.choices[0].message.content;
-      console.log(data);
-
-      setAns(data);
+      try {
+				const response = await openai.chat.completions.create({
+				        model: "gpt-3.5-turbo",
+				        messages: [
+				          {
+				            role: "user",
+				            content: query,
+				          },
+				        ],
+				      });
+				      let data = response.choices[0].message.content;
+				      console.log(data);
+				
+				      setAns(data);	
+			} catch (error) {
+				toast.error("API key is not present");
+			}
     }
     main();
   };
@@ -57,8 +60,10 @@ export default function doubt() {
     console.log(arr);
   };
 
-  return (
-    <div className="flex justify-center py-20">
+	return (
+		
+		<div className="flex justify-center py-20">
+			<Toaster/>
       <div className="flex flex-col w-2/3 items-center">
       {(!show) && <div>
           <div className="text-2xl text-center font-bold bg-white px-6 py-2 rounded-lg text-orange-500 shadow mb-20">Hello, Here is your personal assistant</div>
