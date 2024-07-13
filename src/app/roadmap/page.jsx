@@ -37,9 +37,9 @@ export default function Roadmap() {
 									<div key = {index} className="py-3 px-16 text-xl cursor-pointer" onClick={()=>{if(val.name === current)setIsDropped(!isDropped); setCurrent(val.name)}}>
 										<div className="flex items-center border-l-4 border-b border-orange-400 p-1 rounded-md text-orange-500">{val.name}<span className="material-symbols-outlined ml-auto">{(isDropped && (val.name === current)) ? "expand_more" : "navigate_next"}</span></div>
 										<div className="mt-2">
-										{val.subtopics.map((v)=>{
+										{val.subtopics.map((v, i)=>{
 											if((isDropped === true) && (val.name === current)) return ( 
-												<Link href={v.link} className="flex items-center pt-2 ml-4 border-l-2 border-slate-200"><span className="material-symbols-outlined">arrow_right</span><span className="hover:underline p-1 rounded-lg">{v.name}</span></Link>
+												<Link href={v.link} key={i} className="flex items-center pt-2 ml-4 border-l-2 border-slate-200"><span className="material-symbols-outlined">arrow_right</span><span className="hover:underline p-1 rounded-lg">{v.name}</span></Link>
 											)
 										})}
 										</div>
