@@ -17,6 +17,10 @@ export default function RootLayout({ children }) {
 					rel="stylesheet"
 					href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,500,0,0"
 				/>
+				<link
+					rel="stylesheet"
+					href="https://cdn-uicons.flaticon.com/2.4.2/uicons-brands/css/uicons-brands.css"
+				></link>
 			</head>
 			<body className={`${inter.className} bg-[#fcf292]`}>
 				<Navbar height="h-16" />
