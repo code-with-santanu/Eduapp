@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { quiz } from "./data";
+import  {quizData} from "../../quizdata";
 import searchPic from "@/app/Images/imagesearch.png";
 import Image from "next/image";
 // import searchBar from "./searchBar";
@@ -31,7 +31,7 @@ export default function Quiz() {
 		wrongAns: 0,
 	});
 
-	const { questions } = quiz;
+	const { questions } = quizData;
 	const { question, answer, correct } = questions[activeQuestion];
 
 	// select and check answer
