@@ -38,7 +38,11 @@ function Navbar({ height }) {
 				>
 					SIGN IN
 				</Link>
-				<a href="https://github.com/prantiranibanda/GeekTopia" target="_blank" className="pt-1">
+				<a
+					href="https://github.com/prantiranibanda/GeekTopia"
+					target="_blank"
+					className="pt-1"
+				>
 					<i className="fi fi-brands-github text-2xl text-orange-500"></i>
 				</a>
 			</div>
