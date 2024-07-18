@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { quizData } from "../../quizdata";
-import searchPic from "@/app/Images/imagesearch.png";
-import Image from "next/image";
 // import searchBar from "./searchBar";
 // import { FaSearch } from "react-icons/fa";
 
